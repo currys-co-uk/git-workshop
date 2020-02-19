@@ -1,0 +1,8 @@
+version: '3.6'
+
+services:
+  git:
+    image: artifactory.dsg-i.com/dixons-carphone/tech-team/git-workshop:latest
+    volumes:
+      - .:/home/student/git:rw
+    command: -c "sleep 1000000"
