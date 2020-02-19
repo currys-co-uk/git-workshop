@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache git vim zsh zsh-vcs curl
+RUN apk add --no-cache git vim zsh zsh-vcs curl nano
 
 RUN adduser -D -h /home/student -s /usr/bin/zsh student
 
