@@ -3,6 +3,10 @@ version: '3.6'
 services:
   git:
     image: artifactory.dsg-i.com/dixons-carphone/tech-team/git-workshop:latest
+    build:
+      context: .
     volumes:
       - .:/home/student/git:rw
     command: -c "sleep 1000000"
+    labels:
+      - git-workshop
